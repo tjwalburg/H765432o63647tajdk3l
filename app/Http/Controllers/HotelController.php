@@ -23,4 +23,8 @@ class HotelController extends Controller
     public function reserva(){
       return view('reserva');
     }
+
+    public function detalle(){
+      return view('detalle');
+    }
 }

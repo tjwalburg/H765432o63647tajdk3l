@@ -19,3 +19,4 @@ Route::get('/','HotelController@index');
 Route::get('rooms','HotelController@rooms');
 Route::get('reserva','HotelController@reserva');
 Route::get('signin','HotelController@signin');
+Route::get('detalle','HotelController@detalle');

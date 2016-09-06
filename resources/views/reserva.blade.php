@@ -1,53 +1,13 @@
 @extends('layout.principal')
 
 @section('navigation')
-<div class="banner1">
-	<div class="header">
-		<div class="container">
-			<div class="logo">
-				<h1><a href="\">Hotel</a></h1>
-			</div>
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<!--/.navbar-header-->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="\">Inicio</a></li>
-							<li><a href="rooms">Habitaciones</a></li>
-							<li class="active"><a href="reserva">Reserva</a></li>
-							<li><a href="contact.html">Contacto</a></li>
-						</ul>
-					</div>
-					<!--/.navbar-collapse-->
-				</nav>
-			<div class="search-box">
-				<div id="sb-search" class="sb-search">
-					<form>
-						<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-						<input class="sb-search-submit" type="submit" value="">
-						<span class="sb-icon-search"> </span>
-						</form>
-				</div>
-			</div>
-				<div class="clearfix"> </div>
-
-			<!-- search-scripts -->
-				<script src="js/classie.js"></script>
-				<script src="js/uisearch.js"></script>
-				<script>
-					new UISearch( document.getElementById( 'sb-search' ) );
-				</script>
-			<!-- //search-scripts -->
-
-		</div>
-	</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+		<li><a href="\" id="index" onclick="javascript:cambiarClase">Inicio</a></li>
+		<li><a href="rooms" id="rooms" onclick="javascript:cambiarClase">Habitaciones</a></li>
+		<li class="active"><a href="reserva" id="reserva" onclick="javascript:cambiarClase">Reservar</a></li>
+		<li><a href="contact" id="contact" onclick="javascript:cambiarClase">Contacto</a></li>
+	</ul>
 </div>
 @stop
 
@@ -57,6 +17,13 @@
 			<div class="account_grid">
 			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
 					<h3>Formulario de Reserva</h3>
+					{!! Form::open() !!}
+						<div>
+							{!! Form::label('Nombres: ')!!}
+							{!! Form::text('nombres_huesped')}
+						</div>
+
+					{!! Form::close() !!}
 					<form>
 						<div>
 							<span>Nombres<label>*</label></span>

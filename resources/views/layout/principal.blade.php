@@ -7,21 +7,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Motel a Hotel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Hotel UACh para estudiantes extranjeros</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Motel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+{!! Html::style('css/bootstrap.css')!!}
+{!! Html::style('css/style.css')!!}
+{!! Html::style('//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css')!!}
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<script src="js/jquery-1.11.1.min.js"></script>
+{!! Html::script('js/jquery-1.11.1.min.js') !!}
+{!! Html::script('https://code.jquery.com/ui/1.12.0/jquery-ui.js')!!}
 <!--webfonts-->
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600' rel='stylesheet' type='text/css'>
    <!--//webfonts-->
-<script type="text/javascript" src="js/bootstrap.js"></script>
+{!! Html::script('js/bootstrap.js') !!}
+
 </head>
 <body>
 <!-- banner -->
@@ -29,7 +30,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="header">
 			<div class="container">
 				<div class="logo">
-					<h1><a href="/">Motel</a></h1>
+					<h1><a href="/">Hotel</a></h1>
 				</div>
 					<nav class="navbar navbar-default" role="navigation">
 						<div class="navbar-header">
@@ -75,41 +76,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-2 deco">
-				<h4>Navigation</h4>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="shortcodes.html">Short Codes </a></li>
-				<li><a href="sigin.html">Sign in</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<h4>Navegación</h4>
+				<li><a href="\">Inicio</a></li>
+				<li><a href="sigin">Inicio Sesion</a></li>
+				<li><a href="contact">Contacto</a></li>
 			</div>
 			<div class="col-md-2 deco">
 				<h4>Links</h4>
 				<li><a href="#">Qui Sommes-Nous ?</a></li>
 				<li><a href="#">Mentions Légales </a></li>
 				<li><a href="#">Conditions D'Utilisation </a></li>
-			</div>
-			<div class="col-md-2 deco">
-				<h4>Social</h4>
-				<div class="soci">
-					<li><a href="#"><i class="f-1"> </i></a></li>
-					<li><a href="#"><i class="t-1"> </i></a></li>
-					<li><a href="#"><i class="g-1"> </i></a></li>
-				</div>
-			</div>
-			<div class="col-md-3 cardss">
-				<h4>Payment Sécure</h4>
-				<li><i class="visa"></i></li>
-				<li><i class="ma"></i></li>
-				<li><i class="paypal"></i></li>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-3 pos">
-			<h4>NewsLetter</h4>
-					   <form method="post">
-						 <input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-						 <div class="smt">
-							<input type="submit" value="Subscribe">
-						 </div>
-					   </form>
 			</div>
 			<div class="clearfix"> </div>
 		</div>

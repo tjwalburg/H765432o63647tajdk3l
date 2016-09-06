@@ -42,6 +42,9 @@ label {
     margin: 0;
     color: #fff;
 }
+.booking-label{
+	color: black;
+}
 /*-- header --*/
 .navbar-nav {
     float: none;
